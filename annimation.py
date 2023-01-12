@@ -107,3 +107,48 @@ def animate(i):
 ani = FuncAnimation(fig=fig, func=animate, interval=1000)
 
 plt.show()
+
+# def plot(s1,s2,h_min_array):
+#     print('plot-s1',s1,'plot-s2',s2,'plot-h_min',h_min_array)
+#     fig = plt.figure()
+#     ax = fig.add_subplot(111, projection='3d')
+
+#     X = s1
+#     Y=s2
+#     Z=h_min_array
+
+#     ax.plot(X, Y, Z,color='blue',marker='o', alpha=1)
+
+#     ax.set_xlabel('s1')
+#     ax.set_ylabel('s2')
+#     ax.set_zlabel('h_min')
+
+#     plt.show()
+    # fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
+    # print('plot',s1,s2,h_min_array)
+    # # Make data.
+    # X =s1
+    # Y =s2
+    # X, Y = np.meshgrid(X, Y)
+    # h_min= np.array(h_min_array)
+    #Z =   np.reshape(h_min,(1, h_min.size))
+
+    # # Plot the surface.
+    # # surf = ax.plot_surface(X, Y, Z, cmap=cm.coolwarm,
+    # #                     linewidth=0, antialiased=False)
+
+
+    # # Customize the z axis.
+    # ax.set_zlim(1,5)
+    # ax.zaxis.set_major_locator(LinearLocator(10))
+    # # A StrMethodFormatter is used automatically
+
+    # ax.zaxis.set_major_formatter('{x:.02f}')
+
+    # # Add a color bar which maps values to colors.
+    # fig.colorbar(surf, shrink=0.5, aspect=5)
+    # ax.set_xlabel('s1', fontsize=15, rotation=60)
+    # ax.set_ylabel('s2', fontsize=15, rotation=60)
+    # ax.set_zlabel('hmin', fontsize=15, rotation=60)
+    # print('h_min',s1,s2,h_min_array)
+    # plt.show()
